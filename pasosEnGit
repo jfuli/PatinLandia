@@ -1,0 +1,6 @@
+voy a anotar todos los pasos a modo de guía de toda relación con github.
+
+Abrimos terminal en Visual Studio Code, hacemos cd hasta carpeta proyecto y escribimos:
+1º git init
+2º git remote add origin https://github.com/jfuli/NombreDeProyecto
+3ºgit config --global core.autocrlf true (si estas en windows=true, o mac/linux=input)

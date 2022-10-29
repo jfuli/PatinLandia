@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" textBox="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" textBox="ie=edge">
+    <title>PatinLandia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+    <header>
+        <div class="menuPrincipal">
+                <a href="index.html" title="home" class="logo">Patin<span>Landia</span>
+                    <!-- <img class="logo img-fluid" src="img/logo.png" alt="MyLogo" title="MyLogo"/> -->
+                </a>
+                <div class="menuToggle" onclick="toggleMenu();"></div>
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="#banner">Inicio</a></li>
+                        <li><a href="#about">Sobre nosotros</a></li>
+                        <li><a href="#producto">Categorías</a></li>
+                        <li><a href="#expert">Expertos</a></li>
+                        <li><a href="#testimonials">Testimonios</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                        <li><span class="themeSwitch"></span></li>
+                        <!--para estos iconos en fontawesome cogemos el unicode del sol y la luna y lo gestionamos con la clase themeSwitch-->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <section class="banner" id="banner">
+            <div class="textBox">
+                <h2>Tu <span>mundo</span> sobre <span>ruedas</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptates quisquam quaerat voluptatem et 
+                exercitationem mollitia unde fugit rem omnis esse velit delectus necessitatibus magni quis, 
+                laudantium quas modi assumenda?</p>
+                <a href="#" class="btn">Leer más</a>
+            </div>
+        </section>
+    </header>
+
+    <main class="main">
+        <section id="about">
+            <div class="row">
+                <div class="col50">
+                    <h2 class="titleText"><span>S</span>obre nosotros</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facere qui incidunt 
+                        voluptatibus perspiciatis ea recusandae quas et! Itaque ea provident 
+                        praesentium esse delectus, ex tempore nobis earum quidem fuga! 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><br>
+                        Blanditiis consectetur, non natus consequuntur dolorem odio illum 
+                        dicta rerum vero commodi beatae minima assumenda fuga nam est quod 
+                        culpa voluptas molestias.
+                    </p>
+                </div>
+                <div class="col50">
+                    <div class="imgBx">
+                        <img src="img/buenas/fantasma.jpg" alt="about">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="producto" id="producto">
+            <div class="title">
+                <h2 class="titleText">Nuestras <span>C</span>ategorías</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolores minima cum magni quas optio, libero suscipit esse aperiam.</p>
+            </div>
+            <div class="textBox">
+                <div class="box">
+                    <div class="imgBx">
+                        <a href=""><img src="img/p_linea.jpg" alt="Patines de línea"></a>
+                    </div>
+                    <div class="text">
+                        <h3>Patines de línea</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <a href=""><img src="img/p_arti.jpg" alt="producto2"></a>
+                    </div>
+                    <div class="text">
+                        <h3>Patínes artísticos</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <a href=""><img src="img/longb.jpg" alt="Longboard"></a>
+                    </div>
+                    <div class="text">
+                        <h3>Longboards</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <a href=""><img src="img/p_e.jpg" alt="Patinete-e"></a>
+                    </div>
+                    <div class="text">
+                        <h3>Patinetes eléctricos</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <a href=""><img src="img/p_m.jpg" alt="Patinetes"></a>
+                    </div>
+                    <div class="text">
+                        <h3>Patinetes</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <a href=""><img src="img/skate.jpg" alt="Skateboard"></a>
+                    </div>
+                    <div class="text">
+                        <h3>Skateboards</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <a href="#contact" class="btn">Contáctanos</a>
+            </div>
+        </section>
+
+        <section class="expert" id="expert">
+            <div class="title">
+                <h2 class="titleText">Nuestros patinadores <span>E</span>xpertos</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolores minima cum magni quas optio, libero suscipit esse aperiam.</p>
+            </div>
+            <div class="textBox">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="img/expert1.jpg" alt="expert1">
+                    </div>
+                    <div class="text">
+                        <h3>Susana López "Jam Skating"</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="img/expert2.jpg" alt="expert2">
+                    </div>
+                    <div class="text">
+                        <h3>Luis Díaz "Jam Skating"</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="img/expert3.jpg" alt="expert3">
+                    </div>
+                    <div class="text">
+                        <h3>Sebastian Albarado "Freestyle skater"</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="img/expert4.jpg" alt="expert4">
+                    </div>
+                    <div class="text">
+                        <h3>María Navarro "Freestyle skater"</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <div class="title white">
+                <h2 class="titleText">Qué <span>D</span>icen Sobre Nosotros</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolores minima cum magni quas optio, libero suscipit esse aperiam.</p>
+            </div>
+            <div class="textBox">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="img/testi1.jpg" alt="testimonial">
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eum repudiandae mollitia perspiciatis sapiente aut 
+                            provident magnam architecto, eaque dolores hic deserunt fugiat illum asperiores non voluptates soluta possimus beatae?</p>
+                        <h3>Angelina Jolie</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="img/testi2.jpg" alt="testimonial">
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eum repudiandae mollitia perspiciatis sapiente aut 
+                            provident magnam architecto, eaque dolores hic deserunt fugiat illum asperiores non voluptates soluta possimus beatae?</p>
+                        <h3>Channing Tatum</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="img/testi3.jpg" alt="testimonial">
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eum repudiandae mollitia perspiciatis sapiente aut 
+                            provident magnam architecto, eaque dolores hic deserunt fugiat illum asperiores non voluptates soluta possimus beatae?</p>
+                        <h3>Ursula Corberó</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="fondo">
+                <div class="containerForm">
+                    <form action="index.html" method="GET" onsubmit="return validateForm()" name="formulario">
+                        <div class="title">
+                            <h2 class="titleText"><span>C</span>ontáctanos</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolores minima cum magni quas optio, libero suscipit esse aperiam.</p>
+                        </div>
+                        <div class="row100">
+                            <div class="col">
+                                <div class="inputBox">
+                                    <input type="text" name="nombre" class="input_text" id="inputNombre"
+                                        aria-describedby="nombreHelp" placeholder="Introduce tu nombre" required>
+                                    <label for="inputNombre">Nombre</label>
+                                    <span class="line"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row100">
+                            <div class="col">
+                                <div class="inputBox">
+                                    <input type="text" name="apellidos" class="input_text" id="inputApellido"
+                                        aria-describedby="nombreHelp" placeholder="Introduce tus apellidos" required>
+                                    <label for="inputApellido">Apellidos</label>
+                                    <span class="line"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row100">
+                            <div class="col">
+                                <div class="inputBox">
+                                    <!-- ponemos el input en type text y lo validamos en js, si no no va el placeholder-->
+                                    <input type="text" name="email" class="input_text" id="inputEmail" 
+                                        aria-describedby="emailHelp" placeholder="Introduce tu correo electrónico" required>
+                                    <label for="inputEmail">Correo electrónico</label>
+                                    <span class="line"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row100">
+                            <div class="col">
+                                <div class="inputBox">
+                                    <input type="phone" name="telefono" class="input_text" id="inputPhone"
+                                        aria-describedby="PhoneHelp" placeholder="Introduce tu número de teléfono" required>
+                                    <label for="inputPhone">Teléfono</label>
+                                    <span class="line"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row100">
+                            <div class="col">
+                                <div class="inputBox textarea">
+                                    <span class="text"></span>
+                                    <textarea name="comentarios" required></textarea>
+                                    <label for="inputComentarios"> Escribe tu mensaje aquí</label>
+                                    <span class="line"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row100">
+                            <div class="col">
+                                <input type="submit" value="Enviar" class="btn btnContact">
+                                <input type="reset" value="Borrar" class="btn btnContact">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="copyrightText">
+            <p>Copyright 2023 <a href="#">jfuli</a>. All Right Reserved</p>
+        </div>
+        <ul class="pie">
+          <li>
+            <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+    </footer>
+    <script src="js/funciones.js"></script>
+</body>
+
+</html>
