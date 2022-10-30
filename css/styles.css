@@ -10,7 +10,7 @@
 
 :root {
   --black: #222;
-  --green: #017143;
+  --green: #017143; /*hay que hacer encajar los colores con los del darkmode*/
   --white: #fff;
   --white2: #fff;
   --black2: #222;
@@ -19,6 +19,7 @@
 
 body {
   background: var(--white);
+  transition: background-color 0.5s ease;
 }
 
 section {
@@ -301,7 +302,7 @@ p {
 }
 .expert .textBox .box .text h3 {
   font-weight: 400;
-  color: #222;
+  color: var(--black);
 }
 /***********************************  END expert ***********************************/
 /***********************************  START testimonials ***********************************/
@@ -436,25 +437,32 @@ p {
   background-size: cover;
 }
 
-/*La propiedad content se usa junto con los pseudo-elementos :before y :after para generar contenido que se adjunta antes o después de un selector CSS.*/
+/*La propiedad content se usa junto con los pseudo-elementos :before y :after
+ para generar contenido que se adjunta antes o después de un selector CSS.*/
 #contact .fondo::before {
   content: "";
   position: absolute;
-  width: 300px;
-  height: 300px;
+  /* width: 300px;
+  height: 300px; */
+  width: 17vw;
+  height: 17vw;
   background: linear-gradient(#ffeb3b, #e91e63);
   border-radius: 50%;
-  transform: translate(-480px, -180px);
+  /* transform: translate(-480px, -180px); */
+  transform: translate(-25vw, -10vw);
 }
 
 #contact .fondo::after {
   content: "";
   position: absolute;
-  width: 250px;
-  height: 250px;
+  /* width: 250px;
+  height: 250px; */
+  width: 15vw;
+  height: 15vw;
   background: linear-gradient(#2196f3, #83d8ff);
   border-radius: 50%;
-  transform: translate(400px, 180px);
+  /* transform: translate(400px, 180px); */
+  transform: translate(21vw, 10vw);
 }
 
 .containerForm {
@@ -526,7 +534,7 @@ p {
   box-shadow: none;
   border: none;
   outline: none;
-  font-size: 15px;
+  font-size: 1em;
   padding: 0 10px;
   z-index: 1;
   color: #222222;
@@ -548,7 +556,8 @@ p {
   top: 0;
   left: 0;
   line-height: 40px;
-  font-size: 18px;
+  /* font-size: 1.2em; */
+  /* font-size: 18px; */
   padding: 0 10px;
   display: block;
   transition: 0.5s;
@@ -599,7 +608,8 @@ p {
   margin-right: 50px;
   /* outline: none; */
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.2em;
+  /* font-size: 18px; */
   border-radius: 2px;
 }
 .btnContact:hover {
