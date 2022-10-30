@@ -19,5 +19,6 @@ https://jfuli.github.io/PatinLandia/
 13º creamos issue en github sobre un apartado q no funciona en darkmode
 14º en la terminal de Visual Studio
 git add .
+git commit -m "resuelto issue darkmode"
 git push origin develop
 git pull origin develop
