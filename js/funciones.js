@@ -1,23 +1,34 @@
-/***********************************  START menu toggle sticky ***********************************/
+/***********************************  START variables globales ***********************************/
+const MENUTOGGLE = document.querySelector(".menuToggle");
+const NAVBAR = document.querySelector("#navbar");
+const DROPDOWN = document.querySelector("#dropdown");
+const THEMESWITCH = document.querySelector(".themeSwitch");
+const BODY = document.querySelector("body");
+const MENUPRINCIPAL = document.querySelector(".menuPrincipal");
+/***********************************  END variables globales ***********************************/
+/***********************************  START menuPrincipal sticky y toggleMenu para responsive ***********************************/
 window.addEventListener("scroll", function () {
-  const menuPrincipal = document.querySelector(".menuPrincipal");
-  menuPrincipal.classList.toggle("sticky", window.scrollY > 0);
+  MENUPRINCIPAL.classList.toggle("sticky", window.scrollY > 0);
 });
 
 function toggleMenu() {
-  const MENUTOGGLE = document.querySelector(".menuToggle");
-  const NAVBAR = document.querySelector("#navbar");
   MENUTOGGLE.classList.toggle("active");
   NAVBAR.classList.toggle("active");
 }
-/***********************************  END menu toggle sticky ***********************************/
-
+/***********************************  END menuPrincipal sticky y toggleMenu para responsive ***********************************/
+/***********************************  START dropdown responsive ***********************************/
+//creado id=dropdown a la lista del navbar, función para volver a cerrar el menú en versión móvil
+DROPDOWN.onclick = function () {
+  if (document.querySelector("#navbar.active")) {
+    MENUTOGGLE.classList.toggle("active");
+    NAVBAR.classList.toggle("active");
+  }
+};
+/***********************************  END dropdown responsive ***********************************/
 /***********************************  START darkmode ***********************************/
-let themeSwitch = document.querySelector(".themeSwitch");
-let body = document.querySelector("body");
-themeSwitch.onclick = function () {
-  themeSwitch.classList.toggle("active");
-  body.classList.toggle("dark");
+THEMESWITCH.onclick = function () {
+  THEMESWITCH.classList.toggle("active");
+  BODY.classList.toggle("dark");
 };
 /***********************************  END darkmode ***********************************/
 /***********************************  START validadorformulario ***********************************/
