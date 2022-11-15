@@ -22,3 +22,8 @@ git add .
 git commit -m "resuelto issue darkmode"
 git push origin develop
 git pull origin develop
+
+repeat
+git push origin develop
+git pull origin develop
+merge
