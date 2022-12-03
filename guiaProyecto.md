@@ -35,11 +35,24 @@ Repetir:
 
 - git push origin develop
 - git pull origin develop
-- merge
+- merge  
+  En rama develop(donde estamos trabajando)=>  
+   git add .  
+  git commit -m "prueba merge"  
+  git push origin develop
+  git checkout master
+  git merge develop
 
-Cambio de nombres de archivos:
-git mv old_filename new_filename
-git commit -m "Rename file"
+Agregar cambios a un commit que aún no hemos subido a github:
+git add archivo1.ext archivo2.ext ...
+git commit --amend
+
+Borrar último commit sin perder cambios actuales
+git reset HEAD^ --soft
+
+Cambio de nombres de archivos:  
+git mv old_filename new_filename  
+git commit -m "Rename file"  
 git push origin YOUR_BRANCH
 
 ---
