@@ -35,12 +35,7 @@ Repetir:
 
 - git push origin develop
 - git pull origin develop
-- merge  
-   En rama develop(donde estamos trabajando)=>  
-   git pull origin develop  
-   git checkout master  
-   git merge develop  
-   git push -u origin master
+- merge
 
 Cambio de nombres de archivos:
 git mv old_filename new_filename
