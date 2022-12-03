@@ -40,7 +40,8 @@ Repetir:
    git add .  
   git commit -m "prueba merge"  
   git push origin develop
-  git merge master
+  git checkout master
+  git merge develop
 
 Agregar cambios a un commit que aún no hemos subido a github:
 git add archivo1.ext archivo2.ext ...
