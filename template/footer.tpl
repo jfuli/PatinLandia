@@ -6,9 +6,13 @@
         <div class="row d-flex align-items-center ">
             <div class="text-left col-sm-10 col-md-4 col-lg-4 col-xl-4 col-xs-10 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Únete a Patinlandia</h6>
-                <p>¿Quién está detrás de todo esto? Te preguntarás... Me llamo Jorge Fernández.
-                    Formé esta empresa con 28 años, después de haberme pasado años y años buscando la manera de compaginar
-                    una vida ajetreada con la salud y el cuidado del medio ambiente. Este proyecto nace de este deseo y espero que os sea útil.</p>
+                <p>¿Quién está detrás de todo esto? Somos un grupo
+                    de personas apasionadas por el deporte. Siempre hemos estado sobre
+                    ruedas, y hemos estado involucrados desde años en proyectos del
+                    más alto nivel en el mundo del roller y el skate. A raíz de esto,
+                    decidimos fundar Patinlandia, un lugar en el que la información es
+                    primordial y donde puedas encontrar la máxima calidad en nuestros
+                    productos..</p>
             </div>
             <!-- Grid column -->
             <div class="text-left col-sm-10 col-md-5 col-lg-5 col-xl-5 col-xs-10 mx-auto mt-3 ">
