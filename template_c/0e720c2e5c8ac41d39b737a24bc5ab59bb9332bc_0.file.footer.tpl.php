@@ -28,11 +28,14 @@ function content_6390d3baae10c7_33659833 (Smarty_Internal_Template $_smarty_tpl)
     <div class="container text-center ">
         <div class="row d-flex align-items-center ">
             <div class="text-left col-sm-10 col-md-4 col-lg-4 col-xl-4 col-xs-10 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">ENAMÓRATE DE BEFIT</h6>
-                <p>¿Quién está detrás de todo esto? Te preguntarás... Me llamo Jorge Fernández.
-                    Formé esta empresa con 28 años, después de haberme pasado años y años buscando la manera de compaginar
-                    una vida ajetreada con la salud. Este proyecto nace de este deseo, de eso y de querer pararles los pies
-                    a esas dietas de moda tan poco saludables. </p>
+                <h6 class="text-uppercase mb-4 font-weight-bold">ENAMÓRATE DE PATINLANDIA</h6>
+                <p>¿Quién está detrás de todo esto? Somos un grupo
+                    de personas apasionadas por el deporte. Siempre hemos estado sobre
+                    ruedas, y hemos estado involucrados desde años en proyectos del
+                    más alto nivel en el mundo del roller y el skate. A raíz de esto,
+                    decidimos fundar Patinlandia, un lugar en el que la información es
+                    primordial y donde puedas encontrar la máxima calidad en nuestros
+                    productos.. </p>
             </div>
             <!-- Grid column -->
             <div class="text-left col-sm-10 col-md-5 col-lg-5 col-xl-5 col-xs-10 mx-auto mt-3 ">
@@ -40,7 +43,7 @@ function content_6390d3baae10c7_33659833 (Smarty_Internal_Template $_smarty_tpl)
                 <p>
                     <i class="fas fa-home mr-3"></i>Calle Instalación, 22 bajo, Instalación, Instalación</p>
                 <p>
-                    <i class="fas fa-envelope mr-3"></i>info@befit.com</p>
+                    <i class="fas fa-envelope mr-3"></i>info@patinlandia.com</p>
                 <p>
                     <i class="fas fa-phone mr-3"></i>976 99 55 22</p>
                 <p>
@@ -60,7 +63,7 @@ function content_6390d3baae10c7_33659833 (Smarty_Internal_Template $_smarty_tpl)
         <hr>
         <div class="col-md-12 col-lg-12 d-flex">
             <p class="copyright col-lg-6 col-md-6">
-                © 2019 Copyright:<strong> befit.com</strong>
+                © 2019 Copyright:<strong> patinlandia.com</strong>
             </p>
             <div class="col-lg-6 col-md-6">
                 <nav class="redesSociales">
