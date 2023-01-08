@@ -36,7 +36,7 @@ function content_5d06b727205065_71700660 (Smarty_Internal_Template $_smarty_tpl)
         <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" class="col-12">
             <input name="cmd" type="hidden" value="_cart" />
             <input name="upload" type="hidden" value="1" />
-            <input name="business" type="hidden" value="luciafffernandez-facilitator@gmail.com" />
+            <input name="business" type="hidden" value="jorgefuli91@gmail.com" />
             <input name="shopping_url" type="hidden" value="http://tienda/ejemploPaypal/index.php" />
             <input name="currency_code" type="hidden" value="EUR" />
             <input name="return" type="hidden" value="http://localhost/tiendaOnline/tienda.php" />

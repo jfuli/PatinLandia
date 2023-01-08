@@ -39,7 +39,7 @@ function content_5ccefe67c5fc76_88896441 (Smarty_Internal_Template $_smarty_tpl)
 Mensaje</span></div>
                         <div class='campo'>
                             <label>Correo:</label><br/>
-                            <input class="inputData" type='text' name='correo' value='luciafffernandez@gmail.com' maxlength="50" /><br/>
+                            <input class="inputData" type='text' name='correo' value='jorgefuli91@gmail.com' maxlength="50" /><br/>
                         </div>
                         <div class='campo'>
                             <label>Contraseña:</label><br/>
@@ -65,7 +65,7 @@ Mensaje</span></div>
                         </div>
                         <div class='campo'>
                             <label>Correo:</label><br/>
-                            <input class="inputData" type='text' name='correo' value='luciafffernandez@gmail.com' maxlength="50" /><br/>
+                            <input class="inputData" type='text' name='correo' value='jorgefuli91@gmail.com' maxlength="50" /><br/>
                         </div>
                         <div class='campo'>
                             <label>Fecha de Nacimiento:</label><br/>
