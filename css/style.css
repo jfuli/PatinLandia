@@ -540,6 +540,10 @@ span .cantidad {
   width: 100% !important;
 }
 
+.slider-pages {
+  margin: 100px !important;
+}
+
 /* LISTADO DE PRODUCTOS --------------------------------------------------------------------------------------------------------*/
 
 .columna-producto img {
