@@ -57,7 +57,7 @@ function content_6390d434ebc338_30620426 (Smarty_Internal_Template $_smarty_tpl)
                         <section class="separacion"></section>
                         <div class='campo'>
                             <label>Nombre:</label><br/>
-                            <input class="inputData" type='text' name='name' value='Lucia'/><br/>
+                            <input class="inputData" type='text' name='name' value='Jorge'/><br/>
                         </div>
                         <div class='campo'>
                             <label>Correo:</label><br/>
