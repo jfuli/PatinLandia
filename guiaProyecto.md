@@ -1,4 +1,4 @@
-# Instrucciones proyecto de fin de grado FPII DAW.
+# Instrucciones proyecto de fin de grado FPII DAW -PatinLandia-.
 
 Página web e-commerce con pasarela de pago de PatinLandia
 
@@ -8,52 +8,70 @@ Página web e-commerce con pasarela de pago de PatinLandia
 
 Voy a anotar todos los pasos a modo de guía de toda relación con GitHub.
 
-Abrimos terminal en Visual Studio Code, hacemos cd hasta carpeta proyecto y escribimos:
+Abrimos terminal en Visual Studio Code, hacemos cd hasta carpeta proyecto:
 
-1. git init
-2. git remote add origin https://github.com/jfuli/NombreDeProyecto
-3. creamos en github el repositorio con el mismo NombreDeProyecto, seleccionamos añadir README.md
-4. git config --global core.autocrlf true (si estas en windows=true, o mac/linux=input)
-5. git status (para ver el estado)
-6. git add . (para añadir todo)
-7. git commit -m "primer commit, landing ok"
-8. git push origin master
-9. git checkout -b develop (creamos rama develop). En github cambiamos la Default branch a develop
-10. git pull origin master
-11. creamos github pages y configuramos para que muestre la rama master  
-    https://jfuli.github.io/PatinLandia/
+- Comandos iniciales:
 
-12. hay que estar siempre en la rama develop, haciendo push y luego pull de develop, los branches los hacemos desde github
-13. creamos issue en github sobre un apartado q no funciona en darkmode
-14. en la terminal de Visual Studio
-15. git add .
-16. git commit -m "resuelto issue darkmode"
-17. git push origin develop
-18. git pull origin develop
+  - git init
+  - git remote add origin `https://github.com/jfuli/NombreDeProyecto`
+  - creamos en github el repositorio con el mismo NombreDeProyecto, seleccionamos añadir README.md
+  - git config --global core.autocrlf true (si estas en windows=true, o mac/linux=input)
+  - git status (para ver el estado)
+  - git add . (para añadir todo)
+  - git commit -m "primer commit, landing ok"
+  - git push origin master
+  - git checkout -b develop (creamos rama develop). En github cambiamos la Default branch a develop
+  - git pull origin master
+  - creamos github pages y configuramos para que muestre la rama master `https://jfuli.github.io/PatinLandia/`
+  - hay que estar siempre en la rama develop, haciendo push y luego pull de develop
+  - creamos issue en github sobre un apartado q no funciona en darkmode
+  - en la terminal de Visual Studio
+  - git add .
+  - git commit -m "resuelto issue darkmode"
+  - git push origin develop
+  - git pull origin develop
 
-Repetir:
+- Repetir:
 
-- git push origin develop
-- git pull origin develop
-- merge  
-  En rama develop(donde estamos trabajando)=>  
-   git add .  
-  git commit -m "prueba merge"  
-  git push origin develop
-  git checkout master
-  git merge develop
+  - git push origin develop
+  - git pull origin develop
+  - merge (git mergetool=herramienta para conflictos merge)
+  - En rama develop(donde estamos trabajando)=>
+    - git add .
+    - git commit -m "prueba merge"
+    - git push origin develop
+    - git checkout master
+    - si te pide primero fetch =>
+    - git fetch origin master
+    - para que no vuelva a pedir fetch=>
+    - git push -u origin master=> Branch 'master' set up to track remote branch 'master' from 'origin'.
+      - ahora cuando tengas que cambiar de rama=> git checkout master
+      - Switched to branch 'master'
+      - Your branch is up to date with 'origin/master'. => se actualiza en local
+    - git merge develop
+    - git pull origin master
+    - git checkout develop
 
-Agregar cambios a un commit que aún no hemos subido a github:
-git add archivo1.ext archivo2.ext ...
-git commit --amend
+- Agregar cambios a un commit que aún no hemos subido a github:
 
-Borrar último commit sin perder cambios actuales
-git reset HEAD^ --soft
+  - git add archivo1.ext archivo2.ext ...
+  - git commit --amend
 
-Cambio de nombres de archivos:  
-git mv old_filename new_filename  
-git commit -m "Rename file"  
-git push origin YOUR_BRANCH
+- Borrar último commit sin perder cambios actuales:
+
+  - git reset HEAD^ --soft
+
+- Crear y borrar ramas:
+
+  - crear=> git checkout -b feature
+  - resolvemos=> add , commit y merge
+  - borrar=> git branch -d feature
+
+- Cambio de nombres de archivos:
+
+  - git mv old_filename new_filename
+  - git commit -m "Rename file"
+  - git push origin YOUR_BRANCH
 
 ---
 
@@ -89,6 +107,16 @@ Paso 4:
 Crea las carpetas que necesites para poner a prueba los archivos PHP bajo la carpeta "htdocs". Si creas una carpeta llamada "scripts", usa la dirección "localhost/scripts" para abrirlos en tu navegador.
 
 `http://localhost/PROYECTOS_XAMP/PatinLandia/`
+
+---
+
+### phpMyAdmin
+
+Configuración de contraseña
+en la app de Xampp=> botón Config en Apache
+seleccionar la opción phpMyAdmin (config.inc.php)
+modificar esta línea
+`$cfg['Servers'][$i]['password'] = 'root';`
 
 ---
 

@@ -1,0 +1,743 @@
+/*Theme Name: Tema QTZ
+  Author: Lucía Fernández Ulibarrena
+  Description: Esta plantilla nos servirá como web inicial para cada uno de nuestros proyectos. Está desarrollada modularmente pensando en que sea todo lo versatil posible para facilitar los diferentes usos que se van a hacer de ella. Para su utilización se requieren conocimientos de html, css, javascript y php. Suerte y diviértete.
+  Versión: 1.0
+*/
+.espacio{
+    height: 100px;
+}
+.espacioPequeno{
+    height: 50px;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+.seccionMargenes{
+    margin-left: auto;
+    margin-right: auto;
+    padding:0;
+}
+
+.iconosHome{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 100px;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+$bg: #f3f8fa;
+$white: #fff;
+$black: #282936;
+
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+    transition: $property $duration $ease;
+}
+
+* {
+    box-sizing: border-box;
+    &::before, &::after {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    background: $bg;
+}
+
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: calc(30px + (35 - 30) * ((100vw - 320px) / (1920 - 320))) !important;
+    margin-bottom: 30px;
+    font-weight: 800; }
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: calc(25px + (30 - 25) * ((100vw - 320px) / (1920 - 320))) !important;
+    margin-bottom: 15px;
+    font-weight: 700; 
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (1920 - 320))) !important;
+    margin-bottom: 15px;
+    font-weight: 700; 
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1920 - 320))) !important;
+    margin-bottom: 15px;
+    font-weight: 400; 
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))) !important;
+}
+
+/****************************************/
+/*****************HEADER*****************/
+.redesSociales img{ 
+    width: 20px;
+    margin: 0 5px 0 5px;
+}
+
+.redesSociales{ 
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.menuPrincipal{
+    justify-content: space-between;
+}
+
+.logo{
+    margin: 10px;
+    width: 170px;
+}
+
+/****************************************/
+/****************CAROUSEL****************/
+.carousel{box-shadow: -2px -1px 19px 10px rgba(0,0,0,0.26);}
+
+.carousel-caption{
+    box-shadow: -2px -1px 19px 10px rgba(0,0,0,0.26);
+    background-color: white;
+    color:black;
+    padding:30px;
+    margin: 20px 0 120px 0;
+    max-width: 350px;
+    min-height: 400px;
+    text-align: left;
+}
+.carousel-item {
+    height: 600px;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+.slide-1{background-image: url('../img/imagen4.jpg');}
+.slide-2{background-image: url('../img/imagen18.jpg');}
+.slide-3{background-image: url('../img/imagen7.jpg');}
+
+/****************************************/
+/************BOTON LEER MÁS************/
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    &.btn-complejo {
+        height: auto;
+        .circle {
+            @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+            position: relative;
+            margin: 0;
+            width: 3rem;
+            height: 3rem;
+            background: $black;
+            border-radius: 1.625rem;
+            .icon {
+                @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background: $white;
+                &.arrow {
+                    @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+                    left: 0.625rem;
+                    width: 1.125rem;
+                    height: 0.125rem;
+                    background: none;
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        top: -0.25rem;
+                        right: 0.0625rem;
+                        width: 0.625rem;
+                        height: 0.625rem;
+                        border-top: 0.125rem solid #fff;
+                        border-right: 0.125rem solid #fff;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+        .button-text {
+            @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0.75rem 0;
+            margin: 0 0 0 1.85rem;
+            color: $black;
+            font-weight: 700;
+            line-height: 1.6;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    &:hover {
+        .circle {
+            width: 100%;
+            .icon {
+                &.arrow {
+                    background: $white;
+                    transform: translate(1rem, 0);
+                }
+            }
+        }
+        .button-text {
+            color: $white;
+        }
+    }
+}
+
+/****************************************/
+/************MENU HAMBURGUESA************/
+a.hamburger{
+    width:25px;
+    height:25px;
+    display:block;
+    margin:0 auto;
+    position:relative;
+    top: inherit !important;
+}
+
+.line{
+    width:32px;
+    height:4px;
+    display:block;
+    position:absolute;
+    background:#fff;
+    border-radius:2px;
+}
+
+.line-1{top:0;}
+.line-2{margin-top:-3px; top:50%;}
+.line-3{bottom:0;}
+
+.navbar-toggler, .navbar-toggler:active{border: none;}
+
+#navbarNav{
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+.iconosNav{
+    margin:10px;
+    margin-bottom:10px;
+}
+
+/****************************************/
+/*****************FOOTER*****************/
+.page-footer{
+    background-color: #212121!important;
+    filter: drop-shadow(-1px -3px 5px #000000);
+    color: white;
+}
+
+.mapaFooter{width: 100%;}
+
+.login {
+    background-image: url("../img/imagen14.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+}
+
+.cajaLogin{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 3% 5% 5% 5%;
+    height: auto;
+}
+
+.seccionMargenes{
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.separacion{
+    height: 50px;
+}
+.iniciarSesion{
+    float:left;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+.registrarse{
+    float:left;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+h2{
+    margin: 20px 0 20px 0; 
+}
+.inputData{
+    padding: 5px;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+label{
+    margin:0;
+}
+
+.submit{
+    padding: 5px;
+    margin-top: 20px;
+    width: 160px;
+}
+.divSubmit{
+    display: flex;
+    justify-content: center;
+}
+
+.formLogin{
+    width: 90%;    
+}
+
+/****************************************/
+/*****************CESTA******************/
+
+#navbarNav > ul.nav.navbar-nav.navbar-right > li > ul{    
+    right: 0;
+    left: auto;
+}   
+ul .dropdown-cart{
+    height: auto;
+}
+
+ul.dropdown-cart li .item{
+    display:block;
+    padding:3px 10px;
+    margin: 3px 0;
+}
+
+ul.dropdown-cart li .item:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+ul.dropdown-cart li .item-left{
+    float:left;
+}
+
+ul.dropdown-cart li .item-left img, ul.dropdown-cart li .item-left span.item-info{
+    float:left;
+}
+
+ul.dropdown-cart li .item-left span.item-info{
+    margin-left:10px;   
+}
+
+ul.dropdown-cart li .item-left span.item-info span{
+    display:block;
+}
+
+ul.dropdown-cart li .item-right{
+    float:right;
+}
+
+ul.dropdown-cart li .item-right button{
+    margin-top:14px;
+}
+
+span .cantidad{
+    margin-top:10px;
+    width:30px;
+}
+
+.card-footer{
+    background-color: none !important;
+}
+
+.botonesCesta{
+    text-align: center;
+}
+.dropdown-menu{
+    padding:1.5rem !important;
+}
+.btn-anadir{
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.9em;
+    font-weight: 700;
+}
+input .btn-anadir:hover{
+    text-transform: underline !important;
+}
+h4, h4 > strong > a{
+    color: #333333;
+}
+h4 > strong > a:hover{
+    color: #666666;
+}
+span{
+    font-size: 0.9em;
+}
+h5{
+    text-transform: uppercase;
+    font-size:.8em;
+    letter-spacing: 2px;
+    color: graytext;
+}
+.imagenCesta{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.fondoBlanco{
+    background-color: white !important;
+}
+
+input[type=submit]:hover {
+    border-color:#212121 !important;
+    background-color:transparent !important;
+    color:#212121 !important;
+}
+.areaClientes{
+    margin-bottom: 20px !important; 
+}
+.item-info{
+    margin: 0 20px 0 20px !important;
+}
+.seccionEnlaceContacto{
+    background-image: url('../img/imagen13.jpg') ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.textoEnlaceContacto{
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 0 6%;
+
+}
+table.pago {
+    align-content: center
+}
+
+th.pago , td.pago {
+    text-align: left;
+    padding: 8px;
+}
+td.precio{
+    text-align: right;
+}
+
+tr.pago:nth-child(even){background-color: #ccc}
+
+th.pago {
+    background-color: #a80f0f;
+    color: white;
+}
+th.productos {
+    background-color: #000 !important;
+}
+.imagenFondoCarrito{
+    background-image: url('../img/imagen2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200;
+    width: 100%;
+    float: left;
+    margin-right: 20px;
+}
+.botonesPago{
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320))) !important;
+}
+.btn-red{
+    background-color: #a80f0f !important;
+    border: solid white 2px;
+}
+.btn:hover{
+    border: solid black 2px;
+}
+.btn:focus{
+    border: none ;
+    color: white !important;
+}
+.formularioUser{
+    margin-top: 30px;
+}
+.error{
+    color: #a80f0f;
+}
+.ocultar{
+    display: none;
+}
+input[type="submit"]:disabled{
+    display: none;
+}
+
+.contacto {
+    background-image: url("../img/imagen19.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+}
+.productImg{
+    background-position: center center;
+    background-size: cover; 
+    height:600px;
+}
+.details{
+    padding:50px !important;
+}
+
+/****************************************/
+/*****************NOSOTROS******************/
+
+/***********************
+ *	Variables
+ **********************/
+$font-family:             'Open Sans', sans-serif;
+$font-size:               1em;
+
+$color-body:              #282828;
+$color-text:              #e2e2e2;
+$color-link:              #80a1c1;
+$color-link-active:       #6386a9;
+
+$variable-skewX:          18deg;
+$variable-vHForSkewX:     32.5vh;
+$variable-scrollingTime:  1350ms;
+
+/***********************
+ *	Project Main Styles
+ **********************/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin:     0;
+    padding:    0;
+}
+
+
+
+.slider-pages {
+    overflow: hidden;
+    position: relative;
+
+    height:   80vh;
+}
+
+.slider-page {
+    position:   absolute;
+
+    top:        0;
+    width:      50%;
+    height:     100vh;
+
+    transition: transform $variable-scrollingTime;
+}
+
+.slider-page--skew {
+    overflow:   hidden;
+    position:   absolute;
+
+    top:        0;
+    width:      140%;
+    height:     80%;
+
+    background: $color-body;
+
+    transform:  skewX($variable-skewX * -1);
+}
+
+.slider-page--left {
+    left:       0;
+
+    transform:  translateX($variable-vHForSkewX * -1)
+        translateY(100%)
+        translateZ(0);
+
+    .slider-page--skew {
+        left:     -40%;
+    }
+
+    .slider-page__content {
+        padding:          auto 30% auto 30%;
+
+        transform-origin: 100% 0;
+    }
+}
+
+.slider-page--right {
+    left:       50%;
+
+    transform:  translateX($variable-vHForSkewX)
+        translateY(-100%)
+        translateZ(0);
+
+    .slider-page--skew {
+        right:    -40%;
+    }
+
+    .slider-page__content {
+        padding:          auto 30% auto 30%;
+
+        transform-origin: 0 100%;
+    }
+}
+
+.slider-page__content {
+    position:         absolute;
+
+    display:          flex;
+    justify-content:  center;
+    align-items:      center;
+    flex-flow:        column wrap;
+
+    top:      0;
+    left:     0;
+    width:    100%;
+    height:   100%;
+    padding:  0 30% 0 30%;
+
+    color:            $color-text;
+    background-size:  cover;
+
+    transform:  skewX($variable-skewX);
+    transition: transform $variable-scrollingTime;
+}
+
+.slider-page__title {
+    margin-bottom: 1em;
+
+    font-size:  $font-size;
+    text-align: center;
+
+    text-transform: uppercase;
+}
+
+.slider-page__title--big {
+    font-size:  $font-size * 1.2;
+}
+
+.slider-page__description {
+    font-size:  $font-size;
+    text-align: center;
+}
+
+.slider-page__link {
+    color:      $color-link;
+
+    &:hover,
+        &:focus {
+        color:            $color-link-active;
+        text-decoration:  none;
+    }
+}
+
+/***********************
+ *	Project JS Styles
+ **********************/
+.js-scrolling__page {
+    position:   absolute;
+
+    top:        0;
+    left:       0;
+    width:      100%;
+}
+
+.js-scrolling--active {
+
+    .slider-page {
+        transform:  translateX(0)
+            translateY(0)
+            translateZ(0);
+    }
+}
+
+.js-scrolling--inactive {
+
+    .slider-page__content {
+        transform:  skewX($variable-skewX)
+            scale(.9);
+    }
+}
+
+.js-scrolling__page-1 {
+
+    .slider-page--left .slider-page__content {
+        background-image: url("../img/imagen3.jpg");
+        background-position: center ;
+    }
+
+    .slider-page--right .slider-page__content {
+        background-color: $color-body;
+    }
+}
+
+.js-scrolling__page-2 {
+
+    .slider-page--left .slider-page__content {
+        background-color: $color-text;
+    }
+    .slider-page--left .slider-page__title,
+    .slider-page--left .slider-page__description {
+        color:            $color-body;
+    }
+
+    .slider-page--right .slider-page__content {
+        background-image: url("../img/imagen20.jpg");
+        background-position: center center;
+    }
+}
+
+.perfil {
+    background-image: url("../img/imagen12.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.mayus{ 
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.titulosGestor{
+    max-width: 200px !important;
+}
+.camposGestor{
+    min-width: 350px !important;
+}
+.inputDataProd{
+    padding: 5px;
+    width: 50%;
+    margin: 10px 0 10px 0;
+}
